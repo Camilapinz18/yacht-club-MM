@@ -13,12 +13,12 @@
                 About us
             </n-tag>
             <n-tag v-model:checked="checked" checkable>
-               Gallery
+                Gallery
             </n-tag>
             <n-tag v-model:checked="checked" checkable>
                 Memberships
             </n-tag>
-            <n-tag v-model:checked="checked" checkable disabled>
+            <n-tag v-model:checked="checked" checkable>
                 Contact
             </n-tag>
             <n-tag v-model:checked="checked" checkable>

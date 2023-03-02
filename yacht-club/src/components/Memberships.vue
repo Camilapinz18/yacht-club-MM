@@ -1,8 +1,9 @@
 <script setup>
-
+import Title from './Title.vue';
 </script>
 
 <template>
+        <Title title="Memberships" />
     <div class="memberships-cont">
         <n-card content-style="padding: 0;" class="accordion">
             <n-tabs type="line" size="large" :tabs-padding="20" pane-style="padding: 20px;">
@@ -125,6 +126,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+   
 }
 
 .numbers-cont {
@@ -146,11 +148,12 @@
     width: 40%;
     height: fit-content;
     margin-right: 10%;
-    color: white
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .card1-img {
-    background-image: url('../assets/images/crew-y.jpg');
+    background-image: url('../assets/images/crew-y1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
@@ -160,7 +163,7 @@
 }
 
 .card2-img {
-    background-image: url('../assets/images/cruise-y.jpg');
+    background-image: url('../assets/images/cruise-y1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
@@ -170,7 +173,7 @@
 }
 
 .card3-img {
-    background-image: url('../assets/images/honor-y.jpg');
+    background-image: url('../assets/images/honor-y1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;

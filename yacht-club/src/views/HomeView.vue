@@ -1,11 +1,11 @@
 <script setup>
-import AboutUs from './components/AboutUs.vue';
-import Header from './components/Header.vue';
-import Gallery from './components/Gallery.vue';
-import Services from './components/Services.vue';
-import Contact from './components/Contact.vue';
-import Memberships from './components/Memberships.vue';
-import Footer from './components/Footer.vue';
+import AboutUs from '../components/AboutUs.vue';
+import Header from '../components/Header.vue';
+import Gallery from '../components/Gallery.vue';
+import Services from '../components/Services.vue';
+import Contact from '../components/Contact.vue';
+import Memberships from '../components/Memberships.vue';
+import Footer from '../components/Footer.vue';
 
 </script>
 

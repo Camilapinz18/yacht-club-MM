@@ -1,9 +1,9 @@
 <script setup>
-
+import Title from './Title.vue';
 </script>
 
 <template>
-    <h1>Abprt</h1>
+    <Title title="About Us" />
     <div class="about-cont">
         <div>
             <img class="side-img" src="../assets/images/yacth-side.jpg">
@@ -11,25 +11,27 @@
         <div class="side-text">
 
             <div class="text-cont">
-                <h3> We are delighted to have you here and look forward to sharing our passion for the open sea with you.
+                <h3 class="about-title-text"> We are delighted to have you here and look forward to sharing our passion for
+                    the open sea with you.
                 </h3>
-                <p>Whether you're a seasoned sailor or a newcomer to the world of boating, Nautica offers something for
+                <p class="about-content-text">Whether you're a seasoned sailor or a newcomer to the world of boating,
+                    Nautica offers something for
                     everyone. From our state-of-the-art facilities and top-of-the-line equipment to our expert instructors
                     and friendly community, we strive to provide an unparalleled experience for all members.</p>
                 <div class="numbers-cont">
-                    <div>
-                        <h1>20+</h1>
-                        <span>years</span>
+                    <div class="number">
+                        <span>20+</span>
+                        <strong>years</strong>
                     </div>
-                    <div>
-                        <h1>60+</h1>
-                        <span>yachts</span>
+                    <div class="number">
+                        <span>60+</span>
+                        <strong>yachts</strong>
                     </div>
-                    <div>
-                        <h1>500+</h1>
-                        <span>members</span>
+                    <div class="number">
+                        <span>500+</span>
+                        <strong>members</strong>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
@@ -38,16 +40,37 @@
 
 <style scoped>
 .about-cont {
-   
+
     display: flex;
     flex-direction: row;
     padding: 50px;
-    justify-content: space-around;
+
     align-items: center;
 }
 
+.about-title-text {
+    font-size: 30px;
+
+
+}
+
+.side-text {
+
+    width: 100%;
+}
+
+
+
+.about-content-text {
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
 .text-cont {
-   
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,12 +78,33 @@
 
 .side-img {
     width: 80%;
-   
+
 }
 
 .numbers-cont {
-   
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}</style>
+
+
+}
+
+.numbers-cont span {
+    color: #2080F0;
+    font-size: 45px;
+
+
+
+}
+
+.number {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+</style>

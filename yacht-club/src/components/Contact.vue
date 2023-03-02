@@ -1,9 +1,9 @@
 <script setup>
-
+import Title from './Title.vue';
 </script>
 
 <template>
-    <h1>COntact</h1>
+        <Title title="Contact" />
     <div class="contact-cont">
 
         <div>

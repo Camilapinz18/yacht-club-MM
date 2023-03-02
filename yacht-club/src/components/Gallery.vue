@@ -1,8 +1,9 @@
 <script setup>
-
+import Title from './Title.vue';
 </script>
 
 <template>
+    <Title title="Gallery" />
     <div class="gallery-cont">
         <n-carousel show-arrow>
             <img class="carousel-img" src="../assets/images/car1.jpg">
@@ -21,8 +22,8 @@
 }
 
 .gallery-cont .n-carousel {
-    height:fit-content;
-    
+    height: fit-content;
+
 }
 
 .carousel-img {

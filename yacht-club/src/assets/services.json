@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "service": "Yacht Dock",
+    "info": "A secure and convenient location to moor yachts with necessary facilities and easy access to the club's amenities",
+    "image": "../../src/assets/images/ser1.jpg"
+  },
+  {
+    "id": 2,
+    "service": "Sailing lesssons",
+    "info": "Sailing lessons and training programs offer education and hands-on experience to individuals interested in learning how to sail or improving their sailing skills.",
+    "image": "../../src/assets/images/ser2.jpg"
+  },
+  {
+    "id": 3,
+    "service": "Yacht fine dining and catering services",
+    "info": "Our fine dining and catering services offer a high-end culinary experience that's perfect for special events and occasions in your yacht trip.",
+    "image": "../../src/assets/images/ser3.jpg"
+  },
+  {
+    "id": 4,
+    "service": "Access to high level yachts",
+    "info": "Exclusive access to some of the most luxurious and high-end yachts available on the market.",
+    "image": "../../src/assets/images/ser4.png"
+  },
+  {
+    "id": 5,
+    "service": "Social events and activities",
+    "info": "From cocktail parties and dinners to live music performances and themed events, there's always something fun and exciting happening at our club",
+    "image": "../../src/assets/images/ser5.png"
+  },
+  {
+    "id": 6,
+    "service": "Water sports",
+    "info": "Exciting and adrenaline-pumping water sports like surfing, kitesurfing, windsurfing, jet skiing, scuba and fishing for all skill levels.",
+    "image": "../../src/assets/images/ser6.jpg"
+  }
+]
