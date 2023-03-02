@@ -1,5 +1,5 @@
 <script setup>
-
+import {RouterLink} from 'vue-router'
 </script>
 
 <template>
@@ -10,7 +10,7 @@
         <n-space class="navbar-cont">
 
             <n-tag v-model:checked="checked" checkable>
-                About us
+              About us
             </n-tag>
             <n-tag v-model:checked="checked" checkable>
                 Gallery
@@ -22,7 +22,7 @@
                 Contact
             </n-tag>
             <n-tag v-model:checked="checked" checkable>
-                <b>Login</b>
+                <RouterLink to="/login">Login</RouterLink> 
             </n-tag>
         </n-space>
     </div>
