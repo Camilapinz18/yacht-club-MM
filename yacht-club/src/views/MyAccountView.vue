@@ -165,7 +165,7 @@ onMounted(() => checkIfUserHasMembership())
 .main-cont {
     width: 80%;
     background-color: white;
-    height: 60%;
+    height: max-content;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
