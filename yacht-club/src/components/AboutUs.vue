@@ -3,7 +3,7 @@ import Title from './Title.vue';
 </script>
 
 <template>
-    <Title title="About Us" />
+    <Title title="About Us" dark='true' />
     <div class="about-cont">
         <div>
             <img class="side-img" src="../assets/images/yacth-side.jpg">

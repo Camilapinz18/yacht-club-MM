@@ -4,7 +4,7 @@ import BuySteps from '../components/BuySteps.vue';
 import ProfileInfo from '../components/ProfileInfo.vue';
 
 import { ref, onMounted } from "vue";
-import {RouterLink} from 'vue-router'
+import { RouterLink } from 'vue-router'
 const showBuyStepsRef = ref(false);
 const showAlertRef = ref(true);
 const hasMembership = ref(false)
@@ -32,8 +32,8 @@ function checkIfUserHasMembership() {
     console.log("has", hasMembership.value)
 }
 
-function logout(){
-   
+function logout() {
+
 }
 
 onMounted(() => checkIfUserHasMembership())
@@ -42,70 +42,73 @@ onMounted(() => checkIfUserHasMembership())
 <template>
     <div class="bg-cont">
         <div class="main-cont">
-            <n-collapse>
-                <n-collapse-item title="My account" name="1">
-                    <div class="account-cont">
-                        <div class="img-cont">
-                            <img class="profile-img" src="../assets/images/profile.jpg" />
-                        </div>
-                        <div class="account-info">
-                            <ProfileInfo />
-                        </div>
-                    </div>
-                </n-collapse-item>
 
-                <n-collapse-item title="My membership" name="2">
-                    <div class="membership-cont" v-if="!hasMembership">
-                        <n-alert title="Membership not found" type="info">
-                            It seems like you dont have a membership yet. Purchase one now!
-                        </n-alert>
-                        <n-button @click="purchaseMembership" type="info">
-                            Purchase my membership!
-                        </n-button>
-                    </div>
-                    <div v-if="showBuyStepsRef">
-                        <BuySteps />
-                    </div>
-                    <div v-if="hasMembership">
-                        <n-card title="Crew Member" class="card-membership">
-                            <template #cover>
-                                <div class="image-container">
-                                    <img class="membership-img" src="../assets/images/crew-y.jpg">
-                                </div>
-
-                            </template>
-                            <div>
-                                <n-list class="profile-info" hoverable clickable>
-                                    <n-list-item>
-                                        <n-thing title="Purchase date" content-style="margin-top: 10px;">
-                                            <span>02/02/23</span>
-                                        </n-thing>
-                                    </n-list-item>
-
-                                    <n-list-item>
-                                        <n-thing title="Period" content-style="margin-top: 10px;">
-                                            <span>02/02/24</span>
-                                        </n-thing>
-                                    </n-list-item>
-
-
-                                </n-list>
+            <n-card title="My account" style="margin-bottom: 16px">
+                <n-tabs default-value="profile" justify-content="space-evenly" type="line">
+                    <n-tab-pane name="profile" tab="My profile">
+                        <div class="account-cont">
+                            <div class="img-cont">
+                                <img class="profile-img" src="../assets/images/profile.jpg" />
                             </div>
-                            <n-button @click="logout" type="info">
-                                Change my membership
+                            <div class="account-info">
+                                <ProfileInfo />
+                            </div>
+                        </div>
+                    </n-tab-pane>
+                    <n-tab-pane name="membership" tab="My membership">
+                        <div class="membership-cont" v-if="!hasMembership">
+                            <n-alert title="Membership not found" type="info">
+                                It seems like you dont have a membership yet. Purchase one now!
+                            </n-alert>
+                            <n-button @click="purchaseMembership" type="info">
+                                Purchase my membership!
                             </n-button>
-                        </n-card>
+                        </div>
+                        <div v-if="showBuyStepsRef">
+                            <BuySteps />
+                        </div>
+                        <div v-if="hasMembership">
+                            <div class="account-cont">
+                                <div class="img-cont">
+                                    <img class="profile-img" src="../assets/images/crew-y-s.jpg" />
+                                </div>
+                                <div class="account-info">
+                                    <n-list hoverable clickable>
+                                        <n-list-item>
+                                            <n-thing title="Membership" content-style="margin-top: 10px;">
+                                                <span>Crew Member</span>
+                                            </n-thing>
+                                        </n-list-item>
+
+                                        <n-list-item>
+                                            <n-thing title="Purchase date" content-style="margin-top: 10px;">
+                                                <span>02/02/23</span>
+                                            </n-thing>
+                                        </n-list-item>
+
+                                        <n-list-item>
+                                            <n-thing title="Expiration date" content-style="margin-top: 10px;">
+                                                <span>02/03/23</span>
+                                            </n-thing>
+                                        </n-list-item>
 
 
-                    </div>
 
-                </n-collapse-item>
-                <n-button type="error">
+                                    </n-list>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </n-tab-pane>
+
+                </n-tabs>
+              
+            </n-card>
+            <n-button type="error">
                     <RouterLink to="/">Logout</RouterLink> 
             </n-button>
-            </n-collapse>
-
-           
         </div>
 
     </div>
@@ -162,7 +165,7 @@ onMounted(() => checkIfUserHasMembership())
 .main-cont {
     width: 80%;
     background-color: white;
-    height: fit-content;
+    height: 60%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;

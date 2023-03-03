@@ -3,9 +3,6 @@ import Title from './Title.vue';
 import ServiceCard from './ServiceCard.vue';
 import services from '../assets/services.json';
 
-
-
-console.log("SERVICES", services)
 </script>
 
 <template>
@@ -25,8 +22,13 @@ console.log("SERVICES", services)
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+margin-top: 30px;
     justify-content: center;
+    background-color: #24466B;
+    height: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 
 }
 

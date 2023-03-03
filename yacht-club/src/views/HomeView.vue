@@ -13,7 +13,7 @@ import Footer from '../components/Footer.vue';
   <Header />
   <AboutUs/>
   <Services/>
-  <Memberships/>
+ <Memberships/> 
   <Gallery/>
   <Contact/>
   <Footer/>

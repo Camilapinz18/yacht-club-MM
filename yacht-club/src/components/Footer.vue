@@ -29,6 +29,7 @@ import Title from './Title.vue';
 
                 </div>
                 <h3>contact@yachtclubprovence.fr</h3>
+                <n-back-top :right="100" />
             </div>
 
             <!-- <img class="map-image" src="../assets/images/map.png" /> -->
@@ -39,13 +40,15 @@ import Title from './Title.vue';
 
 <style scoped>
 .footer-cont {
-    background-color: #2080F0;
+    background-color: #24466B;
     height: 30%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 40px;
+    margin-top:20px
 }
 
 .footer-info {
