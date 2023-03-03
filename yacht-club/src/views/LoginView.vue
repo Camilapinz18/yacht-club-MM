@@ -1,5 +1,5 @@
 <script setup>
-import {RouterLink} from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 </script>
 
@@ -7,49 +7,48 @@ import {RouterLink} from 'vue-router'
     <div class="bg-cont">
 
         <div class="login-cont">
-            <div class="image-cont">
-                <img class="image-side" src="../assets/images/login-side.jpg" />
-            </div>
+            
             <div class="inputs">
                 <img class="logo-img" src="../assets/images/logoB.png" />
 
 
 
                 <div class="memberships-cont">
-                    <n-card content-style="padding: 0;" class="accordion">
-                        <n-tabs type="line" size="large" :tabs-padding="20" pane-style="padding: 20px;">
-                            <n-tab-pane name="Login">
-
-                                <div class="card-cont">
-
-                                    <n-input class="input" size="large" round placeholder="Email" />
-                                    <n-input class="input" size="large" round placeholder="Password" />
-
-                                </div>
-                                <n-button type="info">
-                                    <RouterLink to="/account">Login</RouterLink>
+                    <n-card class="tab">
+                        <n-tabs class="card-tabs" default-value="signin" size="large" animated style="margin: 0 -4px"
+                            pane-style="padding-left: 4px; padding-right: 4px; box-sizing: border-box;">
+                            <n-tab-pane name="signin" tab="Sign in">
+                                <n-form>
+                                    <n-form-item-row label="Username">
+                                        <n-input />
+                                    </n-form-item-row>
+                                    <n-form-item-row label="Password">
+                                        <n-input />
+                                    </n-form-item-row>
+                                </n-form>
+                                <n-button type="info" block secondary strong>
+                                    Sign In
                                 </n-button>
-
-
                             </n-tab-pane>
-                            <n-tab-pane name="Sign up">
-
-                                <div class="card-cont">
-
-                                    <n-input class="input" size="large" round placeholder="Full name" />
-                                    <n-input class="input" size="large" round placeholder="Email" />
-                                    <n-input class="input" size="large" round placeholder="Password" />
-                                    <n-input class="input" size="large" round placeholder="Phone" />
-                                    <n-input class="input" size="large" round placeholder="Address" />
-
-                                </div>
-                                <n-button type="info">
+                            <n-tab-pane name="signup" tab="Sign up">
+                                <n-form>
+                                    <n-form-item-row label="Full name">
+                                        <n-input />
+                                    </n-form-item-row>
+                                    <n-form-item-row label="Password">
+                                        <n-input />
+                                    </n-form-item-row>
+                                    <n-form-item-row label="Phone">
+                                        <n-input />
+                                    </n-form-item-row>
+                                    <n-form-item-row label="Address">
+                                        <n-input />
+                                    </n-form-item-row>
+                                </n-form>
+                                <n-button type="info" block secondary strong>
                                     Sign up
                                 </n-button>
-
-
                             </n-tab-pane>
-
                         </n-tabs>
                     </n-card>
                 </div>
@@ -70,12 +69,15 @@ import {RouterLink} from 'vue-router'
 }
 
 .login-cont {
-    width: 80%;
+    width: 40%;
     background-color: white;
     height: 70%;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .image-side {
@@ -95,10 +97,11 @@ import {RouterLink} from 'vue-router'
 .inputs {
     display: flex;
     flex-direction: column;
-
-    /* justify-content: center; */
+    width: 70%;
+    justify-content: center;
     align-items: center;
     padding-top: 5%;
+
 
 }
 
@@ -106,4 +109,6 @@ import {RouterLink} from 'vue-router'
     width: 100%;
     margin: 5px;
 }
+
+
 </style>

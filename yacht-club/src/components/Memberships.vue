@@ -78,7 +78,11 @@ import Title from './Title.vue';
                                     <span>members</span>
                                 </div>
                             </div>
-
+                            <n-space>
+                                <n-button type="info">
+                                    Purchase membership
+                                </n-button>
+                            </n-space>
                         </div>
                     </div>
                 </n-tab-pane>
@@ -113,6 +117,11 @@ import Title from './Title.vue';
                                     <span>members</span>
                                 </div>
                             </div>
+                            <n-space>
+                                <n-button type="info">
+                                    Purchase membership
+                                </n-button>
+                            </n-space>
                         </div>
                     </div>
                 </n-tab-pane>
@@ -154,7 +163,7 @@ import Title from './Title.vue';
 
 .card1-img {
     background-image: url('../assets/images/crew-y1.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 70vh;
     display: flex;
@@ -164,7 +173,7 @@ import Title from './Title.vue';
 
 .card2-img {
     background-image: url('../assets/images/cruise-y1.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 70vh;
     display: flex;
@@ -174,7 +183,7 @@ import Title from './Title.vue';
 
 .card3-img {
     background-image: url('../assets/images/honor-y1.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 70vh;
     display: flex;
